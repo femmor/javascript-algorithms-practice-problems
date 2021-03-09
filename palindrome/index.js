@@ -10,8 +10,9 @@
 
 // Solution 2
 function palindrome(str) {
-    str.split("").every((char, i) => {
-        return char === str[str.length - i - 1];
+    // Solution 2
+    return str.split("").every((char, idx) => {
+        return char === str[str.length - idx - 1]
     })
 }
 
@@ -19,12 +20,5 @@ module.exports = palindrome;
 
 
 // Solution 1
-// function palindrome(str) {
-//     // reverse the given str
-//     const reversedStr = str.split("").reverse().join("");
-//     // compare the given str with the reversedStr and return result
-//     return str === reversedStr;
-// }
-
-
-
+    // const reversed = str.split("").reverse().join("")
+    // return reversed === str ? true : false
